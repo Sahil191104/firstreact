@@ -5,19 +5,23 @@ function CounterFun (props) {
     const [count, setCount] = useState(0);
 
     const increse = () => {
-        setCount(count + 1);
+        if (count < 5) {
+            setCount(count + 1);
+        }
     };
     
     const dicrese = () => {
-        setCount(count - 1);
+        if (count > 0) {
+            setCount(count - 1);
+        }
     };
 
     return (
         <div>
             <h1>Counter Function based Component</h1>
-            <button onClick={increse}>+</button>
+            <button disabled={count < 5 ? false: true} onClick={increse}>+</button>
             <span>{count}</span>
-            <button onClick={dicrese}>-</button>
+            <button disabled={count === 0 ? true: false} onClick={dicrese}>-</button>
         </div>
     );
 }

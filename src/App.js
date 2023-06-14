@@ -2,6 +2,8 @@
 import './App.css';
 import Counter from './container/Counter';
 import CounterFun from './container/CounterFun';
+import Country from './container/Country';
+import CountryFun from './container/CountryFun';
 import Employe from './container/Employe';
 import EmployeFun from './container/EmployeFun';
 import Students from './container/Students';
@@ -10,12 +12,14 @@ import StudentsFun from './container/StudentsFun';
 function App() {
   return (
     <div>
-      <Students />
+      {/* <Students />
       <StudentsFun />
       <Employe />
       <EmployeFun />
       <Counter />
-      <CounterFun />
+      <CounterFun /> */}
+      <Country />
+      <CountryFun />
     </div>
   );
 }

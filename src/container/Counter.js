@@ -9,25 +9,33 @@ export default class Counter extends Component {
     };
   }
 
+  //------------Increse------------ //
+
   increse = () => {
-    this.setState({
-      count: this.state.count + 1
-    });
+    if (this.state.count < 5) {
+      this.setState({
+        count: this.state.count + 1
+      });
+    }
   };
 
+  //------------Dicrese------------ //
+
   dicrese = () => {
-    this.setState({
-      count: this.state.count - 1
-    });
+    if (this.state.count > 0) {
+      this.setState({
+        count: this.state.count - 1
+      });
+    }
   };
 
   render() {
     return (
       <div>
         <h1>Counter class based Component</h1>
-        <button onClick={this.increse}>+</button>
+        <button disabled={this.state.count < 5 ? false: true} onClick={this.increse}>+</button>
         <span>{this.state.count}</span>
-        <button onClick={this.dicrese}>-</button>
+        <button disabled={this.state.count === 0 ? true: false} onClick={this.dicrese}>-</button>
       </div>
     );
   }
