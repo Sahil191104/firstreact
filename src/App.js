@@ -1,5 +1,7 @@
 // import logo from './logo.svg';
 import './App.css';
+import Clock from './container/Clock';
+import ClockFun from './container/ClockFun';
 import Counter from './container/Counter';
 import CounterFun from './container/CounterFun';
 import Country from './container/Country';
@@ -18,8 +20,10 @@ function App() {
       <EmployeFun />
       <Counter />
       <CounterFun /> */}
-      <Country />
-      <CountryFun />
+      {/* <Country />
+      <CountryFun /> */}
+      {/* <Clock /> */}
+      <ClockFun />
     </div>
   );
 }
