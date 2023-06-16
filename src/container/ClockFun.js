@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Button } from 'reactstrap';
 
 function ClockFun(props) {
     //1.
@@ -24,6 +25,7 @@ function ClockFun(props) {
     return (
         <div>
             <p>{time.toLocaleTimeString()}</p>
+            <Button color="danger">Danger!</Button>
         </div>
     );
 }

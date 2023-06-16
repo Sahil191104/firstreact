@@ -1,4 +1,5 @@
 // import logo from './logo.svg';
+import { Container } from 'reactstrap';
 import './App.css';
 import Clock from './container/Clock';
 import ClockFun from './container/ClockFun';
@@ -10,6 +11,8 @@ import Employe from './container/Employe';
 import EmployeFun from './container/EmployeFun';
 import Students from './container/Students';
 import StudentsFun from './container/StudentsFun';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import ReactStrap from './container/ReactStrap';
 
 function App() {
   return (
@@ -23,7 +26,8 @@ function App() {
       {/* <Country />
       <CountryFun /> */}
       {/* <Clock /> */}
-      <ClockFun />
+      {/* <ClockFun /> */}
+      <ReactStrap />
     </div>
   );
 }
