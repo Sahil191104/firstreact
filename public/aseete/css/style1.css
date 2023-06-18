@@ -8,6 +8,32 @@ html {
     font-size: 62.5%;
 }
 
+.fixedtop {
+    position: fixed;
+    background-color: black;
+}
+.top {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+    position: fixed;
+    background-color: #C8191C;
+    display: none;
+    cursor: pointer;
+    text-align: center;
+}
+.top i {
+    padding: 19px;
+    font-size: 20px;
+    color: #fff;
+}
+.show {
+    display: block;
+}
+
 body {
     font-family: 'Alegreya';
 }
