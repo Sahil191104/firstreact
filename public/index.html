@@ -15,15 +15,19 @@
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="%PUBLIC_URL%/aseete/css/reset.css"/>
+    <link rel="stylesheet" href="%PUBLIC_URL%/aseete/css/style.css"/>
+    <script src="%PUBLIC_URL%/aseete/js/modernizr.js"></script>
+    <link rel="stylesheet" href="%PUBLIC_URL%/aseete/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="%PUBLIC_URL%/aseete/css/fonts.css"/>
+    <link rel="stylesheet" href="%PUBLIC_URL%/aseete/css/style1.css"/>
+
     <title>React App</title>
   </head>
   <body>
@@ -39,5 +43,76 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
+    <script src="%PUBLIC_URL%/aseete//js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="%PUBLIC_URL%/aseete/js/particles.min.js"></script>
+    <script src="%PUBLIC_URL%/aseete/js/app.js"></script>
+    <script src="https://unpkg.com/kursor"></script>
+    
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                console.log($(window).scrollTop());
+    
+                if ($(window).scrollTop() > 100) {
+                        $(".top").addClass("show")
+                } else {
+                        $(".top").removeClass("show")
+                }
+            })
+
+            $(".top").click(function() {
+                $("html, body").animate({
+                    scrollTop:0
+                })
+            })
+        });
+    </script>
+    <script>
+        new kursor({
+            type: 4,
+            color: '#fff',
+        })
+    </script>
+    <script src="%PUBLIC_URL%/aseete/js/main.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                var x = $(this).scrollTop();
+                console.log(x);
+
+                if (x > 100) {
+                    $("header").addClass("fixedtop")
+                } else {
+                    $("header").removeClass("fixedtop")
+                }
+            })
+        });
+    </script>
+
+    <script>
+        var swiper1 = new Swiper(".happy-slider", {
+            slidesPerView: 1,
+            spaceBetween: 40,
+            navigation: {
+                nextEl: '.swiper-button-next1',
+                prevEl: '.swiper-button-prev1',
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 1,
+                    spaceBetween: 6,
+                },
+                1199: {
+                    slidesPerView: 2,
+                    spaceBetween: 8,
+                },
+            },
+        });
+    </script>
+
   </body>
 </html>

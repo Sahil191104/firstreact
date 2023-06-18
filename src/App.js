@@ -10,6 +10,7 @@ import Employe from './container/Employe';
 import EmployeFun from './container/EmployeFun';
 import Students from './container/Students';
 import StudentsFun from './container/StudentsFun';
+import Traveler from './container/Traveler';
 
 function App() {
   return (
@@ -23,7 +24,8 @@ function App() {
       {/* <Country />
       <CountryFun /> */}
       {/* <Clock /> */}
-      <ClockFun />
+      {/* <ClockFun /> */}
+      <Traveler />
     </div>
   );
 }
