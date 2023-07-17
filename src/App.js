@@ -2,6 +2,10 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Products from './container/Products';
+import { Form } from 'reactstrap';
+import { Provider } from 'react-redux';
+import { configstore } from './redux/Store';
+import CounterRedux from './container/CounterRedux';
 // import Clock from './container/Clock';
 // import ClockFun from './container/ClockFun';
 // import Counter from './container/Counter';
@@ -15,20 +19,26 @@ import Products from './container/Products';
 // import Traveler from './container/Traveler';
 
 function App() {
+const store = configstore();
+
   return (
     <div>
-      {/* <Students />
+      <Provider store={store}>
+        {/* <Students />
       <StudentsFun />
       <Employe />
       <EmployeFun />
       <Counter />
       <CounterFun /> */}
-      {/* <Country />
+        {/* <Country />
       <CountryFun /> */}
-      {/* <Clock /> */}
-      {/* <ClockFun /> */}
-      {/* <Traveler /> */}
-      <Products />
+        {/* <Clock /> */}
+        {/* <ClockFun /> */}
+        {/* <Traveler /> */}
+        {/* <Products /> */}
+        <CounterRedux/>
+        {/* <Form /> */}
+      </Provider>
     </div>
   );
 }
