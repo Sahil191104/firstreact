@@ -6,6 +6,7 @@ import { Form } from 'reactstrap';
 import { Provider } from 'react-redux';
 import { configstore } from './redux/Store';
 import CounterRedux from './container/CounterRedux';
+import Notistack from './container/Notistack';
 // import Clock from './container/Clock';
 // import ClockFun from './container/ClockFun';
 // import Counter from './container/Counter';
@@ -36,7 +37,8 @@ const store = configstore();
         {/* <ClockFun /> */}
         {/* <Traveler /> */}
         {/* <Products /> */}
-        <CounterRedux/>
+        {/* <CounterRedux/> */}
+        {/* <Notistack/> */}
         {/* <Form /> */}
       </Provider>
     </div>
