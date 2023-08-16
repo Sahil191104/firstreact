@@ -7,6 +7,7 @@ import { Provider } from 'react-redux';
 import { configstore } from './redux/Store';
 import CounterRedux from './container/CounterRedux';
 import Notistack from './container/Notistack';
+import Drawer from './container/Drawerdata';
 // import Clock from './container/Clock';
 // import ClockFun from './container/ClockFun';
 // import Counter from './container/Counter';
@@ -20,7 +21,7 @@ import Notistack from './container/Notistack';
 // import Traveler from './container/Traveler';
 
 function App() {
-const store = configstore();
+  const store = configstore();
 
   return (
     <div>
@@ -40,6 +41,7 @@ const store = configstore();
         {/* <CounterRedux/> */}
         {/* <Notistack/> */}
         {/* <Form /> */}
+        <Drawer />
       </Provider>
     </div>
   );
